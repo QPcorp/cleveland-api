@@ -22,9 +22,9 @@ $app->get('/login', function () use ($db, $app) {
     $userInfo = json_decode($userJson, true);
 
 
-    $userProfile = json_decode($userJson);
-    $company = $userProfile[0]->company_id;
-    $app->setCookie('company', $company, '2 days');
+    // $userProfile = json_decode($userJson);
+    // $company = $userProfile[0]->company_id;
+    // $app->setCookie('company', $company, '2 days');
     echo $userJson;
     //echo '{"message":"Logged In As '.$userProfile[0]->first_name.' '.$userInfo[0]['last_name'].' ('.$userInfo[0]['email'].')'.'"}';
     //json_encode($sth->fetchAll(PDO::FETCH_CLASS));
